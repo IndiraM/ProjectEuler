@@ -1,6 +1,6 @@
 prime = []
 
-for num in range(2,200000):
+for num in range(2,15):
     for i in range(2,num):
         if num%i==0:
             break
@@ -8,4 +8,4 @@ for num in range(2,200000):
         prime.append(num)
 
 print prime
-print prime[10001]
+#print prime[10001]

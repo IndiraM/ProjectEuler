@@ -1,19 +1,19 @@
-for a in range(1,100000):
-    b = a*2
-    c= a*3
-    d= a*4
-    e= a*5
-    f= a*6
+def perumated_mulitples(n1,n2):
+    number = set(str(n1))
+    square_number = set(str(n2))
+    if number == square_number:
+        return True
 
-    def num(n):
-        Sorted_list = []
-        for i in n:
-            Sorted_list.append(i)
-            Sorted_list.sort()
-        return Sorted_list
-
-    a1= num(str(a))
-    a2= num(str(b))
-
-    if cmp(a1,a2) == 0:
-        print True
+if __name__ == '__main__':
+    n = 1
+    while n<=1000000:
+        square = n*2
+        square3 = n*3
+        square4 = n * 4
+        square5 = n * 5
+        square6 = n * 6
+        if perumated_mulitples(n,square) and perumated_mulitples(n,square3) and perumated_mulitples(n,square4) and perumated_mulitples(n,square5) and perumated_mulitples(n,square6)==True:
+            print n
+            break
+        else:
+            n = n+1
